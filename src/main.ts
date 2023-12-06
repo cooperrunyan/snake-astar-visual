@@ -407,7 +407,10 @@ async function tick() {
 }
 
 (async () => {
-  while (true) {
+  const frame = async () => {
     await tick();
-  }
+
+    requestAnimationFrame(frame);
+  };
+  frame();
 })();
