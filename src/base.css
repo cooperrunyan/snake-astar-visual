@@ -1,0 +1,33 @@
+:root {
+  --primary: #00ff00;
+  --secondary: #ff0000;
+  --bg: #000000;
+  --fg: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+#game {
+  width: 100vw;
+  height: 100vh;
+  border: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+html,
+body {
+  overscroll-behavior: none;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+
+  background-color: var(--bg);
+  color: var(--fg);
+  overflow: hidden;
+}
